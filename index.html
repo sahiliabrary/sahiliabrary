@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sahil's Library</title>
 <meta name="description" content="Sahil's Library — a digital library of poetry, blogs, writings and books.">
 <style>
-:root{--bg:#08090d;--panel:#11131b;--text:#f4f0e8;--muted:#aaa7af;--line:#292b36;--accent:#d8b36a}
+:root{--bg:#08090d;--text:#f4f0e8;--muted:#aaa7af;--line:#292b36;--accent:#d8b36a}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0,#28213b 0,#0b0c12 30%,var(--bg) 70%);color:var(--text);font-family:Georgia,serif;line-height:1.7}
 a{color:inherit;text-decoration:none}.wrap{max-width:1120px;margin:auto;padding:0 22px}
 nav{position:sticky;top:0;z-index:10;background:#08090ddd;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
@@ -14,12 +13,11 @@ nav{position:sticky;top:0;z-index:10;background:#08090ddd;backdrop-filter:blur(1
 .links{display:flex;gap:19px;font:14px Arial;color:var(--muted)}.links a:hover{color:#fff}
 .hero{min-height:66vh;display:grid;place-items:center;text-align:center;padding:65px 0}.eyebrow{font:600 11px Arial;letter-spacing:3px;text-transform:uppercase;color:var(--accent)}
 h1{font-size:clamp(3rem,9vw,6.5rem);line-height:.95;margin:18px 0;background:linear-gradient(120deg,#fff,#d4cdbf,#a99775);-webkit-background-clip:text;color:transparent}
-.lead{max-width:700px;margin:auto;color:var(--muted);font-size:1.08rem}.btn{display:inline-block;margin-top:28px;padding:11px 21px;border:1px solid #64563c;border-radius:999px;color:#f0dba9;font:14px Arial}
+.lead{max-width:700px;margin:auto;color:var(--muted);font-size:1.08rem}.btn,.pdfbtn{display:inline-block;margin-top:13px;padding:9px 14px;border:1px solid #4d4535;border-radius:8px;color:#eed8a2;font:12px Arial}.btn{margin-top:28px;padding:11px 21px;border-radius:999px}
 section{padding:65px 0;border-top:1px solid #ffffff08}.head{margin-bottom:25px}.head h2{margin:4px 0;font-size:2.1rem}.head p{color:var(--muted);font:14px Arial}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:linear-gradient(145deg,#ffffff09,#ffffff02);border:1px solid var(--line);border-radius:17px;padding:23px;transition:.2s}.card:hover{transform:translateY(-3px);border-color:#494b58}
-.card h3{margin:9px 0 6px;font-size:1.35rem}.card p{color:var(--muted);font-size:.95rem}.tag{font:600 10px Arial;letter-spacing:1.5px;text-transform:uppercase}
-.pdfbtn{display:inline-block;margin-top:13px;padding:9px 14px;border:1px solid #4d4535;border-radius:8px;color:#eed8a2;font:12px Arial}.empty{text-align:center;color:var(--muted);padding:30px;border:1px dashed #333642;border-radius:16px}
-.quote{max-width:800px;margin:auto;text-align:center;font-size:clamp(1.5rem,4vw,2.3rem);color:#ddd8ce}.book{display:flex;gap:24px;align-items:center}.cover{width:120px;height:175px;flex:none;border-radius:8px;background:linear-gradient(145deg,#382e45,#0d0d12);border:1px solid #51485a;display:grid;place-items:center;text-align:center;font-size:1.35rem}
+.card h3{margin:9px 0 6px;font-size:1.35rem}.card p{color:var(--muted);font-size:.95rem}.tag{font:600 10px Arial;letter-spacing:1.5px;text-transform:uppercase}.empty{text-align:center;color:var(--muted);padding:30px;border:1px dashed #333642;border-radius:16px}
+.book{display:flex;gap:24px;align-items:center}.cover{width:120px;height:175px;flex:none;border-radius:8px;background:linear-gradient(145deg,#382e45,#0d0d12);border:1px solid #51485a;display:grid;place-items:center;text-align:center;font-size:1.35rem}
 footer{text-align:center;color:#6f7078;padding:40px 0;font:12px Arial;border-top:1px solid var(--line)}
 @media(max-width:720px){.grid{grid-template-columns:1fr}.links{gap:10px;font-size:12px}.links a:nth-child(4){display:none}.book{align-items:flex-start}}
 </style>
@@ -33,43 +31,20 @@ footer{text-align:center;color:#6f7078;padding:40px 0;font:12px Arial;border-top
 <p class="lead">Poetry, blogs, stories and books — written by Sahil Singh and collected in one place.</p>
 <a class="btn" href="#library">Enter the library ↓</a></div></section>
 
-<section id="library"><div class="wrap"><div class="head"><div class="eyebrow">The collection</div><h2>Latest publications</h2><p>Each card opens the original PDF.</p></div><div id="latest" class="grid"></div></div></section>
+<section id="library"><div class="wrap"><div class="head"><div class="eyebrow">The collection</div><h2>Latest publications</h2><p>Read the original PDF.</p></div>
+<div class="grid"><article class="card"><div class="tag">Writing</div><h3>The tales of hill's</h3><p>A personal reflection on hills, nature, peace, trust, and the feeling of finding comfort in nature.</p><small style="color:#777;font:11px Arial">2026</small><br><a class="pdfbtn" href="pdfs/the-tales-of-hills.pdf" target="_blank" rel="noopener">📖 Read PDF</a></article></div></div></section>
 
-<section id="poetry"><div class="wrap"><div class="head"><div class="eyebrow">Poetry</div><h2>Poems & collections</h2></div><div id="poetryGrid" class="grid"></div></div></section>
-
-<section id="blogs"><div class="wrap"><div class="head"><div class="eyebrow">Journal</div><h2>Blogs</h2></div><div id="blogsGrid" class="grid"></div></div></section>
-
-<section id="writings"><div class="wrap"><div class="head"><div class="eyebrow">Creative work</div><h2>Writings</h2></div><div id="writingsGrid" class="grid"></div></div></section>
+<section id="poetry"><div class="wrap"><div class="head"><div class="eyebrow">Poetry</div><h2>Poems & collections</h2></div><div class="empty">No poetry PDFs published yet.</div></div></section>
+<section id="blogs"><div class="wrap"><div class="head"><div class="eyebrow">Journal</div><h2>Blogs</h2></div><div class="empty">No blog PDFs published yet.</div></div></section>
+<section id="writings"><div class="wrap"><div class="head"><div class="eyebrow">Creative work</div><h2>Writings</h2></div>
+<div class="grid"><article class="card"><div class="tag">Writing</div><h3>The tales of hill's</h3><p>A reflection on the hills and the comfort, patience and understanding found in nature.</p><a class="pdfbtn" href="pdfs/the-tales-of-hills.pdf" target="_blank" rel="noopener">📖 Read PDF</a></article></div></div></section>
 
 <section id="books"><div class="wrap"><div class="head"><div class="eyebrow">Books</div><h2>My books</h2></div>
-<div class="card book"><div class="cover">Kashi<br>&amp;<br>Kaal</div><div><div class="tag">Book</div><h3>Kashi aur Kaal</h3><p>Your book can be linked to its PDF here when you upload it.</p><a class="pdfbtn" href="pdfs/kashi-aur-kaal.pdf" target="_blank">📖 Read PDF</a></div></div></div></section>
+<div class="card book"><div class="cover">Kashi<br>&amp;<br>Kaal</div><div><div class="tag">Book</div><h3>Kashi aur Kaal</h3><p>Your book can be linked to its PDF here when you upload it.</p></div></div></div></section>
 
 <section id="about"><div class="wrap"><div class="eyebrow">The author</div><h2>About Sahil</h2>
-<p style="color:var(--muted);max-width:760px">Welcome to Sahil's Library — a personal space for poetry, blogs, stories and books. Replace this introduction with your own author biography.</p></div></section>
+<p style="color:var(--muted);max-width:760px">Welcome to Sahil's Library — a personal space for poetry, blogs, stories and books.</p></div></section>
 </main>
 <footer>© 2026 Sahil's Library · Built for words that deserve a place.</footer>
-
-<script>
-/*
-ADD YOUR PDFs HERE.
-1. Put the PDF inside the "pdfs" folder.
-2. Add one object below.
-3. Commit to GitHub.
-Example:
-{type:"Poetry",title:"My Poem",desc:"A short description.",date:"2026-10-02",file:"pdfs/my-poem.pdf"}
-*/
-const publications = [
-  {type:"Poetry",title:"Your first poem",desc:"Replace this sample with your first poetry PDF.",date:"2026-10-02",file:"pdfs/your-first-poem.pdf"},
-  {type:"Blog",title:"Your first blog",desc:"Replace this sample with your first blog PDF.",date:"2026-10-02",file:"pdfs/your-first-blog.pdf"},
-  {type:"Writing",title:"Your first writing",desc:"Replace this sample with your story or essay PDF.",date:"2026-10-02",file:"pdfs/your-first-writing.pdf"}
-];
-
-function card(x){return `<article class="card"><div class="tag">${x.type}</div><h3>${x.title}</h3><p>${x.desc}</p><small style="color:#777;font:11px Arial">${x.date}</small><br><a class="pdfbtn" href="${x.file}" target="_blank" rel="noopener">📖 Read PDF</a></article>`}
-function fill(id,arr){document.getElementById(id).innerHTML=arr.length?arr.map(card).join(""):'<div class="empty">No publications here yet.</div>'}
-fill("latest",[...publications].sort((a,b)=>b.date.localeCompare(a.date)));
-fill("poetryGrid",publications.filter(x=>x.type==="Poetry"));
-fill("blogsGrid",publications.filter(x=>x.type==="Blog"));
-fill("writingsGrid",publications.filter(x=>x.type==="Writing"));
-</script>
 </body>
 </html>
