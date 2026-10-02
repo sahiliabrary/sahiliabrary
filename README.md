@@ -1,14 +1,14 @@
-# Sahil's Library
+# Sahil's Library — Version 2
 
-A free, static personal writing website.
+Free static writing website.
 
-## Run it
-Open `index.html` in any browser.
+## Add a writing
+Open `index.html`, find `const writings = [ ... ]`, and add another object:
 
-## Publish it for free
-Upload `index.html` to a GitHub repository and enable GitHub Pages.
+`{type:"Poetry",title:"My Poem",desc:"A short description.",date:"2026-10-02"}`
 
-## Customize
-Edit the text inside `index.html` to replace the sample blogs, poems, writings and author bio.
+Allowed types: `Poetry`, `Blog`, `Writing`.
 
-Next version can add separate article pages and a simple publishing workflow.
+Commit the updated `index.html` to GitHub Pages.
+
+This version intentionally has no paid services, passwords, or API keys.
