@@ -1,16 +1,14 @@
-## Hi there 👋
+# Sahil's Library
 
-<!--
-**sahiliabrary/sahiliabrary** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+A free, static personal writing website.
 
-Here are some ideas to get you started:
+## Run it
+Open `index.html` in any browser.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Publish it for free
+Upload `index.html` to a GitHub repository and enable GitHub Pages.
+
+## Customize
+Edit the text inside `index.html` to replace the sample blogs, poems, writings and author bio.
+
+Next version can add separate article pages and a simple publishing workflow.
